@@ -37,7 +37,7 @@ const Profile = () => {
             <Header header={"个人资料"} />
             <Link to="/">返回首页</Link>
             <img
-                src={`http://localhost:2000/mybucket/${localStorage.getItem("username")}`}
+                src={`http://localhost:2000/mybucket/${localStorage.getItem("username")}?tempid=${Math.random()}`}
                 height={100}
                 width={100}
             />
